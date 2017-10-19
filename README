@@ -1,1 +1,10 @@
 Indexing software that stores file uniqueness inside an sqlite database for easier deduplication.
+
+I've accumulated a lot of duplicate files over the last decade, and while most
+deduplication tools would allow me to deduplicate them by e.g. replacing them
+by hardlinks, I'm choosing the more manual approach of identifying duplicates
+as quickly as possible (by only calculating sha256 sums if there is another
+file with exactly the same byte size) and then manually querying the sqlite
+database for whatever it is that I need at the moment.
+
+If I ever manage to sort this mess out, I'll let you know.
