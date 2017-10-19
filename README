@@ -1,0 +1,1 @@
+Indexing software that stores file uniqueness inside an sqlite database for easier deduplication.
