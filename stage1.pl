@@ -1,4 +1,7 @@
 #!/usr/bin/perl
+# stage 1: takes a bunch of paths as argv, walks them with find, stats the
+# individual files for their size and then stores the size in the sqlite
+# database.
 use strict;
 use warnings;
 use DBI;
